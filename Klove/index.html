@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/home.png"/>
+    <title>Home|Positive Encouraging Klove</title> 
+    <link rel="stylesheet" href="style.css">
+<body>
+  <header class="one-edge-shadow">
+      <img src="images/logo.png">
+
+      <div id="header-menu">
+          <a href="#">Home</a>
+          <a href="#">Music</a>
+          <a href="#">Ministry</a>
+          <a href="#">DJs</a>
+          <a href="#">Books</a>
+          <a href="#">Contests</a>
+          <a href="#">Events</a>
+          <a class="last-nav-link" href="#">News</a>
+
+          <a class="after-last" href="#">About Us</a>
+          <a class="after-last" href="#">Sign In</a>
+          <button class="button">DONATE</button>
+      </div>
+
+        <!--After Toggle-Menu-->
+<div class="container">
+    <div class="navbar">
+        <nav>
+            <ul id="menuList">
+               <li class="first-el">Home</li>
+               <li >Music</li>
+               <li >Ministry</li>
+               <li >DJs</li>
+               <li >Books</li>
+               <li >Contests</li>
+               <li >Events</li>
+               <li >News</li>
+               <li >About Us</li>
+               <li >Sign In</li>
+               <li><button class="button">DONATE</button></li>
+            </ul>
+        </nav>
+        <img class="search-icon" src="images/search.png">
+       <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+</div>
+
+  </header>
+
+  <div class="one-edge-shadow" id="search-menu">
+    <div id="song-menu">
+     <button class="button" id="live"><img id="play-btn" src="images/play-btn.png">LISTEN LIVE</button>
+     <div id="curr-song">
+         <img src="images/pop-smoke.png">
+         <div>
+             <strong >Dior</strong>
+             <div id="space-artist"><p>POP SMOKE</p></div>
+         </div>
+     </div>
+    </div>
+
+    <div id="search-section">
+        <button class="button" id="demand-btn"><img src="images/play-btn2.png">N DEMAND</button>
+
+        <div id="line"></div>
+
+        <div class="button" id="search-type">
+            <img src="images/search.png">
+              <textarea id="input" type="text" placeholder="Search" ></textarea>
+         </div>
+    </div>
+  </div>
+
+
+  <script src="myscript.js"></script>
+</body> 
+</html>
