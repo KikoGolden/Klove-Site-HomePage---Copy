@@ -286,6 +286,11 @@ textarea{
         box-shadow: 0px 15px 20px rgba(255, 194, 63, 0.541);
         transition: 0.4s ease-in-out;
 }
+.button-hov-blue:hover{
+    background: rgb(0, 162, 255);
+    box-shadow: 0px 15px 20px rgba(63, 185, 255, 0.541);
+    transition: 0.4s ease-in-out;
+}
 /*Support*/
 #support-wrapper{
     margin-top:6px;
@@ -337,6 +342,49 @@ textarea{
 }
 #support-title{
     visibility: hidden;
+}
+
+/*Video Container*/
+#videoholder{
+  height: 500px;
+  width: 100%;
+  margin: 5% 1px;
+  color: white;
+  text-align: center;
+  overflow:hidden;
+}
+#videoholder video{
+    width: 100%;
+    opacity: 0.9;
+    margin-top: -20%;
+    z-index: -100;
+}
+#videoholder img{
+    height: 40px;
+    z-index: 1000;
+}
+#video-content{
+    display: flex;
+    flex-direction: column;
+}
+#video-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+    margin-top: -30%;
+}
+#video-content h2{
+    margin-left: -18px;
+    z-index: 1000;
+    font-size: 40px;
+    font-weight: 300;
+}
+#video-content{
+    z-index: 1000;
+    color: white;
+    position: relative;
 }
 /*Different Windows Width*/
 @media only screen and (max-width:1350px){
@@ -410,6 +458,16 @@ textarea{
        #support-img-web{
            visibility: visible;
        }
+       /*Video Holder*/  
+       #videoholder{
+        height: 600px;
+    }
+    #videoholder video{
+        margin-top: -10%;
+  }
+  #video-text{
+      margin-top: -45%;
+  }
 }
 @media only screen and (max-width:750px){
     #support-img-web{
@@ -417,6 +475,29 @@ textarea{
     }
     #blue-half{
         height:545px;
+    }
+    #videoholder{
+        height: 700px;
+      }
+      #videoholder video{
+          margin-top: 0;
+    }
+    #video-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        margin-top: -50%;
+    }
+    #videoholder h1{
+        font-size: 25px;
+    }
+    #videoholder img{
+        height: 25px
+    }
+    #videoholder  h2{
+        font-size: 25px;
     }
 }
 @media only screen and (min-width:1350px){
