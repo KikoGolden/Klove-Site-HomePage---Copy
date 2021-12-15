@@ -408,6 +408,48 @@ textarea{
     margin-top: -75px;
     padding-bottom: 20px;
 }
+
+/*Footer*/
+footer{
+    padding: 20px 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.938);
+    display: flex;
+    justify-content: space-around;
+}
+#footer-links img{
+ height: 20px;
+}
+#footer-links button{
+    margin: 11px 11px;
+    gap:5px;
+    box-shadow: none;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 120px;
+    padding: 8px;
+    background:rgba(255, 255, 255, 0.938);
+    color:black;
+    font-weight: bold;
+}
+#footer-links a{
+    text-decoration: none;
+}
+#footer-links{
+    width: 900px;
+}
+#footer-links button:hover{
+    background: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.301);
+    transition: 0.3s linear;
+}
+#footer-logo{
+    width: 155px;
+}
+footer button strong{
+    z-index: 200;
+    padding-bottom: 20px;
+}
+
 /*Different Windows Width*/
 @media only screen and (max-width:1350px){
     #header-menu{
@@ -491,7 +533,17 @@ textarea{
   #video-text{
       margin-top: -45%;
   }
+
+  /*footer*/
+  footer{
+      flex-direction: column;
+      align-items: center;
+  }
+  #footer-links{
+      width: 450px;
+  }
 }
+
 @media only screen and (max-width:750px){
     #support-img-web{
         width: 450px;
@@ -526,6 +578,11 @@ textarea{
     }
     #videoholder  h2{
         font-size: 25px;
+    }
+
+    /*footer*/
+    #footer-links{
+        width: 300px;
     }
 }
 @media only screen and (min-width:1350px){
