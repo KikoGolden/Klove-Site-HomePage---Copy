@@ -14,9 +14,9 @@ header{
     background-color: white;
     align-items: center;
     gap: 15%;
-    padding: 0 5%;
+    padding: 5px 5%;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     top: 0;
     right: 0;
     left: 0;
@@ -373,7 +373,6 @@ textarea{
 }
 #videoholder img{
     height: 40px;
-    z-index: 1000;
 }
 #video-content{
     display: flex;
@@ -384,17 +383,15 @@ textarea{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    z-index: 1000;
     margin-top: -30%;
 }
 #video-content h2{
     margin-left: -18px;
-    z-index: 1000;
     font-size: 40px;
     font-weight: 300;
 }
 #video-content{
-    z-index: 1000;
+    z-index: 10;
     color: white;
     position: relative;
 }
@@ -411,14 +408,17 @@ textarea{
 
 /*Footer*/
 footer{
-    padding: 20px 10px;
+    padding: 20px;
     width: 100%;
     background: rgba(255, 255, 255, 0.938);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 50px;
 }
 #footer-links img{
- height: 20px;
+ height: 14px;
+ margin-right: 5px;
 }
 #footer-links button{
     margin: 11px 11px;
@@ -426,28 +426,27 @@ footer{
     box-shadow: none;
     font-family:Arial, Helvetica, sans-serif;
     width: 120px;
-    padding: 8px;
+    padding: 10px;
     background:rgba(255, 255, 255, 0.938);
     color:black;
+    font-size: 14px;
     font-weight: bold;
 }
 #footer-links a{
     text-decoration: none;
-}
-#footer-links{
-    width: 900px;
 }
 #footer-links button:hover{
     background: white;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.301);
     transition: 0.3s linear;
 }
-#footer-logo{
-    width: 155px;
+#footer-links{
+    width: 900px;
 }
-footer button strong{
-    z-index: 200;
-    padding-bottom: 20px;
+
+#footer-logo{
+    height: 45px;
+
 }
 
 /*Different Windows Width*/
@@ -538,10 +537,14 @@ footer button strong{
   footer{
       flex-direction: column;
       align-items: center;
+      justify-content:center;
   }
   #footer-links{
-      width: 450px;
+      width: 550px;
   }
+  #footer-logo{
+    margin-left: -100px
+}
 }
 
 @media only screen and (max-width:750px){
@@ -582,7 +585,11 @@ footer button strong{
 
     /*footer*/
     #footer-links{
-        width: 300px;
+        width: 360px;
+    }
+    #footer-logo{
+        margin-left: -70px;
+    
     }
 }
 @media only screen and (min-width:1350px){
